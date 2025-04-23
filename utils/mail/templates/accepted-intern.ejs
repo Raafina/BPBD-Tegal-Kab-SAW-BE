@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selamat! Anda Diterima dalam Program Magang</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px 0;
+      background-color: #f1f1f1;
+    "
+  >
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      style="background-color: #f1f1f1"
+    >
+      <tr>
+        <td align="center">
+          <table
+            width="600"
+            cellpadding="0"
+            cellspacing="0"
+            style="
+              background-color: #ffffff;
+              border: 1px solid #dddddd;
+              border-radius: 15px;
+              overflow: hidden;
+            "
+          >
+            <!-- Header -->
+            <tr>
+              <td
+                align="center"
+                style="background-color: #ffffff; padding-top: 20px"
+              >
+                <img
+                  src="https://res.cloudinary.com/raafi/image/upload/v1745419199/BPBD_Tegal_Logo_flh8dj.png"
+                  alt="BI Logo"
+                  width="250"
+                  style="display: block"
+                />
+              </td>
+            </tr>
+            <!-- Content -->
+            <tr>
+              <td style="padding: 20px">
+                <p>Halo <strong><%= full_name %></strong> 👋</p>
+
+                <p>
+                  Selamat! Anda telah diterima sebagai peserta Magang di Badan
+                  Penanggulangan Bencana Daerah (BPBD) Kabupaten Tegal.
+                  Selanjutnya dimohon untuk peserta hadir onboarding pada :
+                </p>
+
+                <table cellpadding="5" cellspacing="0" width="100%">
+                  <tr>
+                    <td style="vertical-align: top">📅Hari, Tanggal</td>
+                    <td>: <%= onboarding_date %></td>
+                  </tr>
+                  <tr>
+                    <td>🕝 Waktu</td>
+                    <td>: <%= onboarding_time %></td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: top">🗺️ Tempat</td>
+                    <td>
+                      :
+                      <a
+                        href="https://maps.app.goo.gl/9QcjzqU9k99omvAt5"
+                        style="color: #000000"
+                        target="_blank"
+                      >
+                        Badan Penanggulangan Bencana Daerah (BPBD) Kabupaten
+                        Tegal</a
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: top; width: 120px">
+                      👔 Pakaian
+                    </td>
+                    <td>
+                      : Atasan resmi putih, bawahan hitam, sepatu gelap, hijab
+                      hitam bagi yang menggunakan.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="vertical-align: top">📝 Note</td>
+                    <td>: Membawa alat tulis, laptop, dan tanda pengenal.</td>
+                  </tr>
+                </table>
+
+                <p style="margin-top: 20px">
+                  Silakan hadir tepat waktu. Bila ada pertanyaan, jangan ragu
+                  untuk menghubungi kami.
+                </p>
+
+                <p style="margin-top: 40px">Hormat kami,</p>
+                <p style="margin-top: 40px">
+                  Sekretaris Badan Penanggulangan Bencana Daerah (BPBD)
+                  Kabupaten Tegal
+                </p>
+              </td>
+            </tr>
+            <!-- Footer -->
+            <tr>
+              <td
+                align="center"
+                style="
+                  background-color: #e30214;
+                  color: #ffffff;
+                  padding: 20px;
+                  font-size: 12px;
+                "
+              >
+                &copy;2025 Badan Penanggulangan Bencana Daerah (BPBD) Kabupaten
+                Tegal
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
