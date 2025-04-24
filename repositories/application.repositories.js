@@ -2,6 +2,7 @@ const { application } = require("../models");
 const { Op } = require("sequelize");
 const { v4: uuidv4 } = require("uuid");
 const { renderMailHtml, sendMail } = require("../utils/mail/mail");
+const { raw } = require("express");
 
 exports.getApplications = async ({
   month,
@@ -110,6 +111,7 @@ exports.getApplicationByStartDate = async (start_month) => {
         [Op.between]: [startOfMonth, endOfMonth],
       },
     },
+    raw: true,
   });
 
   if (data.length) {

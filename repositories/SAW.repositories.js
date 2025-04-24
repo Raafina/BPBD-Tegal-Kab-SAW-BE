@@ -38,7 +38,7 @@ exports.getSAW_Results = async ({
       "motivation_letter_score",
       "total_score",
     ],
-    order: [[sortBy || "full_name", sort || "asc"]],
+    order: [[sortBy || "total_score", sort || "desc"]],
     offset: (page - 1) * limit,
     limit: limit,
   });

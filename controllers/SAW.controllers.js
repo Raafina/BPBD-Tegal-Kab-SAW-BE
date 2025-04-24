@@ -1,5 +1,18 @@
 const SAWUseCase = require("../usecases/SAW.usecases");
 
+exports.calculate = async (req, res, next) => {
+  try {
+    const { year, month } = req.body;
+    const results = await SAWUseCase.calculate(year, month);
+
+    res
+      .status(200)
+      .json({ message: "Data berhasil dieksekusi dengan SAW!", data: results });
+  } catch (error) {
+    next(error);
+  }
+};
+
 exports.getSAW_Results = async (req, res, next) => {
   try {
     const { month, year, page, limit, sort, sortBy, search } = req.query;

@@ -44,10 +44,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.FLOAT,
       },
-      college_major_score: {
-        allowNull: false,
-        type: Sequelize.FLOAT,
-      },
+
       CV_score: {
         type: Sequelize.FLOAT,
         allowNull: true,
